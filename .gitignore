@@ -5,5 +5,6 @@ __pycache__/
 *.pyc
 db.sqlite3
 db_lab_project
+db_lab2_project
 *.log
 .env
