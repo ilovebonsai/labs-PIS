@@ -7,5 +7,8 @@ db.sqlite3
 db_lab_project
 db_lab2_project
 db_lab3_project
+db_lab4_project
+db_lab5_project
+db_lab6_project
 *.log
 .env
