@@ -10,5 +10,6 @@ db_lab3_project
 db_lab4_project
 db_lab5_project
 db_lab6_project
+db_lab7_project
 *.log
 .env
