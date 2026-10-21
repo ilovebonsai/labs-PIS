@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static '/css/article.css' %}">
+        <title>{{ post.title }}</title>
+    </head>
+    <body>
+        <div class="article">
+                    <h4 class="reg">
+                        <a href="http://127.0.0.1:8000/article/add/">Создать статью</a> &nbsp;&nbsp;
+                        <a href="http://127.0.0.1:8000/registration/">Регистрация</a>
+                    </h4>
+            <div class="header">
+                <div class="logo-img">
+                    <img src="{% static 'hat.jpg' %}" alt="hat">
+                </div>
+                <div class="logo-text">
+                    <h2 class="logo-main-page">
+                        <a href="http://127.0.0.1:8000/">Все статьи</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="one-post">
+                <h2 class="post-title">{{ post.title }}</h2>
+                <div class="article-info">
+                    <div class="article-author">{{ post.author.username }}</div>
+                    <div class="article-created-date">{{ post.created_date }}</div>
+                </div>
+                <p class="article-text">{{ post.text }}</p>
+            </div>
+        </div>
+    </body>
+</html>

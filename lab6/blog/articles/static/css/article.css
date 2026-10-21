@@ -1,0 +1,64 @@
+body {
+    background: #1abc9c; 
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #ffffff;
+}
+.post-title {
+    font-size: 32px;
+}
+.post-title a {
+color: #ffffff;
+}
+.archive {
+    width: 960px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.reg {
+    font-size: 16px;
+    text-align: right;
+}
+.reg a {
+    color: #ffffff;
+}
+.header img {
+    display: block; 
+    width: 318px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.article-author { 
+    width: 50%; 
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+.article-created-date { 
+    text-align: right;
+    font-style: italic;
+    font-size: 16px;
+}
+.article {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo-img img {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.logo-img {
+    float: left;
+}
+.logo-text {
+    float: right;
+    text-align: center;
+    line-height: 318px;
+}
+.logo-text a {
+    color: #ffffff;
+}
+.one-post {
+    clear: both;
+}
