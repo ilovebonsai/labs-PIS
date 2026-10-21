@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static '/css/article.css' %}">
+        <title>Архив статей</title>
+    </head>
+    <body>
+        <div class="archive">
+            <h4 class="reg">
+                <a href="http://127.0.0.1:8000/article/add/">Создать статью</a> &nbsp;&nbsp;
+                <a href="http://127.0.0.1:8000/registration/">Регистрация</a>
+            </h4>
+            <div class="header">
+                <img src="{% static 'hat.jpg' %}" alt="hat">
+            </div>
+            <div class="post">
+                {% for post in posts %}
+                    <div class="one-post">
+                        <div class="post-title">
+                            <a href="http://127.0.0.1:8000/article/{{ post.id }}">{{ post.title }}</a>
+                        </div>
+                        <button class="fold-button" type="button">Свернуть</button>
+                        <div class="article-info">
+                            <div class="article-author">{{ post.author.username }}</div>
+                            <div class="article-created-date">{{ post.created_date }}</div>
+                        </div>
+                        <p class="article-text">{{ post.get_excerpt }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <script src="{% static 'js/helloworld.js' %}"></script>
+        <script src="{% static 'js/fold-post.js' %}"></script>
+    </body>
+</html>
